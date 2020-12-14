@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+
+<configuration>
+<property>
+<name>fs.default.name</name>
+<value>hdfs://{{(groups['Master'])[0]}}:{{ port }}</value>
+</property>
+</configuration>
